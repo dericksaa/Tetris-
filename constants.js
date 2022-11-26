@@ -1,8 +1,21 @@
+/*creamos las variables que dan las dimensiones a nuestro juego
+en el archivo tetris.js habiamos agregado la transformacion de escala, scale 
+. A ARISTA que es el tamaño de cada cuadrito, le decimos que va a ocupar 
+30 veces la unidad del lienzo, es decir el lado de cada cuadrito sera 
+de 30px. adicional de damos el reloj del juego, el numero de columnas,
+el numero de filas y el puntaje que se suma al desaparecer una fila,
+cada unidad de puntaje se corresponde a un bloque */
+
 const GAME_CLOCK = 1000 
-const BLOCK_SIDE_LENGTH = 30 
+const ARISTA = 30 
 const ROWS = 20 
 const COLS = 10 
 const SCORE_WORTH = 10 
+
+/*tambien creamos las fichas a partir de un array compuesto de mas arrays, 
+es decir una array multidimecional, en este caso tenemos un array bidimencional 
+ya que es un array dentro de otro.
+y creamos otro array de colores para cada una de las fichas  */
 
 const SHAPES = [
     [],
