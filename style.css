@@ -13,3 +13,9 @@ body{
     align-items: center;
     background-color: blue;
 }
+
+.contenedor{
+    background-color: yellow;
+    height: 80%;
+    width: 50%;
+}
