@@ -11,11 +11,22 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: black;
+    text-align: center;
 }
 
-.contenedor{
-    background-color: yellow;
-    height: 80%;
-    width: 50%;
+#scoreboard{
+    color: wheat;
+}
+
+img{
+    height: 40px;
+    width: 40px;
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(217, 217, 217, 1);
 }

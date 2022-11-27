@@ -65,11 +65,11 @@ const SHAPES = [
 
 const COLORS = [
     '#D9D9D9',
-    '#FF0000',
-    '#00FF00',
-    '#0000FF',
-    '#FFFF00',
-    '#00FFFF',
-    '#10FF01',
-    '#F000FF'
+    '#5DADE2',
+    '#45B39D',
+    '#E59866',
+    '#F4D03F',
+    '#CD6155',
+    '#A569BD',
+    '#AEB6BF'
 ]
