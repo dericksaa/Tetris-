@@ -104,6 +104,8 @@ function moveAbajo (){
     model.moveDown() 
 }
 
+//*EVENTOS DE TOUCH PARA MOVIL */
+
 
 rotacion.addEventListener('touchenter', rotar)
 function rotar (){

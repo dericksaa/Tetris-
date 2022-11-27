@@ -64,7 +64,7 @@ const SHAPES = [
 ]
 
 const COLORS = [
-    '#000000',
+    '#D9D9D9',
     '#FF0000',
     '#00FF00',
     '#0000FF',
