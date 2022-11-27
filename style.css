@@ -15,8 +15,9 @@ body{
     text-align: center;
 }
 
-#scoreboard{
+h2, h1{
     color: wheat;
+    font-family: 'Keania One', cursive;
 }
 
 img{
