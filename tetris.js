@@ -2,8 +2,13 @@
 a los cuales queremos dar funcionalidad mediante js. Creamos un contexto para acceder a los metodos y dibujar sobre 
 el canvas el cual sera en 2d. con scale, logramos escalar las unidades del lienzo*/
 
+/*Agregamos lines para realizar con este un proceso similar a 
+scoreboard con el din de llevar a cabo el conteo de lineas 
+eliminadas */
+
 let canvas = document.getElementById("game-canvas") 
-let scoreboard = document.getElementById("scoreboard") 
+let scoreboard = document.getElementById("scoreboard")
+let lines = document.querySelector('#lines')
 let ctx = canvas.getContext("2d") 
 ctx.scale(ARISTA, ARISTA) 
 let model = new GameModel(ctx)
@@ -15,8 +20,10 @@ let rotacion = document.querySelector('#rotacion')
 let derecha = document.querySelector('#derecha')
 let abajo = document.querySelector('#abajo')
 
+/*agregamos la variable lines1 */
 
-let score = 0 
+let score = 0
+let lines1 = 0
 
 setInterval(() => {
     newGameState()
@@ -45,15 +52,22 @@ const fullSend = () => {
         return true
     }
 
+    /*Agregamos a la sentencia if otra operacion para 
+    poder imprimir lines divvidiendo a scoreworth entre 10 */
+
     for (let i = 0; i < model.grid.length; i++) {
         if (allFilled(model.grid[i])) {
-            score += SCORE_WORTH 
+            score += SCORE_WORTH
+            lines1 += SCORE_WORTH/10
             model.grid.splice(i, 1) 
             model.grid.unshift([0,0,0,0,0,0,0,0,0,0])
         }
     }
 
+    /*Se imprime lines para mostrar en el display */
+
     scoreboard.innerHTML = "Score: " + String(score)
+    lines.innerHTML = "Lines: " + String(lines1)
 }
 
 
