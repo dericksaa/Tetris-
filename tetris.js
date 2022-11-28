@@ -58,7 +58,7 @@ const fullSend = () => {
     for (let i = 0; i < model.grid.length; i++) {
         if (allFilled(model.grid[i])) {
             score += SCORE_WORTH
-            lines1 += SCORE_WORTH/10
+            // lines1 += SCORE_WORTH/10
             model.grid.splice(i, 1) 
             model.grid.unshift([0,0,0,0,0,0,0,0,0,0])
         }
@@ -67,7 +67,7 @@ const fullSend = () => {
     /*Se imprime lines para mostrar en el display */
 
     scoreboard.innerHTML = "Score: " + String(score)
-    lines.innerHTML = "Lines: " + String(lines1)
+    lines.innerHTML = "Lines: " + String(score/10)
 }
 
 
