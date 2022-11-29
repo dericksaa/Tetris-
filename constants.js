@@ -6,8 +6,18 @@ de 30px. adicional de damos el reloj del juego, el numero de columnas,
 el numero de filas y el puntaje que se suma al desaparecer una fila,
 cada unidad de puntaje se corresponde a un bloque */
 
-const GAME_CLOCK = 1000
-const ARISTA = 30
+/*We create the variables that give the dimensions to our game
+in the tetris.js file we had added the scale transformation, scale
+
+ARISTA, which is the size of each square, we tell it that it will occupy
+30 times the unit of the canvas, that is, the side of each square will be
+of 30px. Additional we give the game clock, the number of columns,
+the number of rows and the score that is added when a row disappears,
+each scoring unit corresponds to a block*/
+
+
+const GAME_CLOCK = 1000 
+const ARISTA = 30 
 const ROWS = 20 
 const COLS = 10 
 const SCORE_WORTH = 10 
@@ -17,6 +27,12 @@ const SCORE_WORTH = 10
 es decir una array multidimecional, en este caso tenemos un array bidimencional 
 ya que es un array dentro de otro.
 y creamos otro array de colores para cada una de las fichas  */
+
+
+/*We also create the tokens from an array composed of more arrays,
+that is, a multidimensional array, in this case we have a bidimensional array
+since it is an array inside another, and we create another array of colors for each of the tiles */
+
 
 const SHAPES = [
     [],
