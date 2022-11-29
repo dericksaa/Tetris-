@@ -6,11 +6,12 @@ de 30px. adicional de damos el reloj del juego, el numero de columnas,
 el numero de filas y el puntaje que se suma al desaparecer una fila,
 cada unidad de puntaje se corresponde a un bloque */
 
-const GAME_CLOCK = 1000 
-const ARISTA = 30 
+const GAME_CLOCK = 1000
+const ARISTA = 30
 const ROWS = 20 
 const COLS = 10 
 const SCORE_WORTH = 10 
+
 
 /*tambien creamos las fichas a partir de un array compuesto de mas arrays, 
 es decir una array multidimecional, en este caso tenemos un array bidimencional 

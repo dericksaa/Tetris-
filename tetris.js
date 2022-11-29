@@ -23,7 +23,6 @@ let abajo = document.querySelector('#abajo')
 /*agregamos la variable lines1 */
 
 let score = 0
-let lines1 = 0
 
 setInterval(() => {
     newGameState()
@@ -40,6 +39,7 @@ let newGameState = () => {
     } else {
         model.moveDown()
     }
+    
 }
 
 const fullSend = () => {
@@ -77,6 +77,8 @@ const fullSend = () => {
 //el valor de key al cual se hace referencia cuando presionamos una tecla, cuando la expresión coincide con un case
 //dentro de switch, se ejecuta la declaración asociada a ese case y las declaraciones que le siguen. Break se coloca
 // para que solo se ejecute la declaración del case correspondiente y no siga con las demás.
+
+
 
 
 document.addEventListener("keydown", (e) => {

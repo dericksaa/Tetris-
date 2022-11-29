@@ -3,6 +3,7 @@ class GameModel {
         this.ctx = ctx 
         this.fallingPiece = null // piece
         this.grid = this.makeStartingGrid()
+        
     }
 
     makeStartingGrid() {
